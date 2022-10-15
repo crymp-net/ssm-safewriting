@@ -1,0 +1,8 @@
+SSMSafeWriting.exe is used to do things that simple Lua on Crysis cannot. Things like connecting http or whatever :)
+To use this .exe, use SafeWritingCall(method,...) in Lua, example
+	local ip=SafeWritingCall("getip","google.com");
+There are these functions available in .exe now:
+	getip hostname					- converts hostname into ip, example: getip google.com
+	connecthttp10 method host port timeout path...	- connects website using http1.0 protocol, example: connecthttp10 GET google.com 80 15 /imghp?hl=en&tab=wi
+	connecthttp11 method host port timeout path...	- connects website using http1.1 protocol, example: connecthttp11 GET google.com 80 15 /imghp?hl=en&tab=wi
+	readprocmemory32 process_title address(decimal)	- reads memory of process at address, example: readprocmemory32 Solitaire 2123457

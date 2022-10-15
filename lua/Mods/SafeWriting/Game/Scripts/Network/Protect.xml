@@ -1,0 +1,101 @@
+<protect>
+	<!-- level 1 -->	
+	<add level="1" file="Game/Scripts/Entities/Items/XML/Weapons/Multiplayer/Fists.xml"/>
+	<add level="1" file="Game/Scripts/GameRules/PowerStruggle.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/PowerStruggleRank.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/PowerStruggleBuying.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/PowerStruggleUtils.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/TeamAction.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/TeamInstantAction.lua"/>
+	<add level="1" file="Game/Scripts/GameRules/SinglePlayer.lua"/>
+	<add level="2" file="Game/GameData.pak"/>
+	<add level="1" file="Bin32/Cry3dEngine.dll"/>
+	<add level="1" file="Bin32/CryAISystem.dll"/>
+	<add level="1" file="Bin32/CryAnimation.dll"/>
+	<add level="1" file="Bin32/CryEntitySystem.dll"/>
+	<add level="1" file="Bin32/CryFont.dll"/>
+	<add level="1" file="Bin32/CryInput.dll"/>
+	<add level="1" file="Bin32/CryMovie.dll"/>
+	<add level="1" file="Bin32/CryPhysics.dll"/>
+	<add level="1" file="Bin32/CryRenderD3D9.dll"/>
+	<add level="1" file="Bin32/CryRenderD3D10.dll"/>
+	<add level="1" file="Bin32/CryRenderNULL.dll"/>
+	<add level="1" file="Bin32/CryScriptSystem.dll"/>
+	<add level="1" file="Bin32/CrySoundSystem.dll"/>
+	<add level="1" file="Bin32/CrySystem.dll"/>
+	<!-- level 2 -->	
+	<add level="2" file="Bin32/CryNetwork.dll"/>
+	<add level="2" file="Bin32/CryGame.dll"/>
+	<add level="2" file="Bin32/CryAction.dll"/>
+	<add level="2" file="Game/LowSpec/LowSpec.pak"/>
+	<add level="2" file="Game/Animations.pak"/>
+	<add level="2" file="Game/Music.pak"/>
+	<add level="2" file="Game/Objects.pak"/>
+	<add level="2" file="Game/Shaders.pak"/>
+	<add level="2" file="Game/Sounds.pak"/>
+	<add level="2" file="Game/Textures.pak"/>	
+	<!-- exclude all bin64 because of compatibility with 1.0.0 -->
+	<exclude level="1" file="Game/Scripts/main.lua"/>
+	<exclude level="1" file="Game/Scripts/GameRules/InstantAction.lua"/>
+	<exclude level="1" file="Bin64/Cry3dEngine.dll"/>
+	<exclude level="1" file="Bin64/CryAction.dll"/>
+	<exclude level="1" file="Bin64/CryAISystem.dll"/>
+	<exclude level="1" file="Bin64/CryAnimation.dll"/>
+	<exclude level="1" file="Bin64/CryEntitySystem.dll"/>
+	<exclude level="1" file="Bin64/CryFont.dll"/>
+	<exclude level="1" file="Bin64/CryGame.dll"/>
+	<exclude level="1" file="Bin64/CryInput.dll"/>
+	<exclude level="1" file="Bin64/CryMovie.dll"/>
+	<exclude level="1" file="Bin64/CryNetwork.dll"/>
+	<exclude level="1" file="Bin64/CryPhysics.dll"/>
+	<exclude level="1" file="Bin64/CryRenderD3D9.dll"/>
+	<exclude level="1" file="Bin64/CryRenderD3D10.dll"/>
+	<exclude level="1" file="Bin64/CryRenderNULL.dll"/>
+	<exclude level="1" file="Bin64/CryScriptSystem.dll"/>
+	<exclude level="1" file="Bin64/CrySoundSystem.dll"/>
+	<exclude level="1" file="Bin64/CrySystem.dll"/> 	
+	<!-- exclude single player stuff -->
+	<exclude level="1" file="Game/Levels"/>	
+	<!-- level 1 -->
+	<add level="1" folder="Game/Scripts/GameRules" recurse="1"/>
+	<add level="1" folder="Game/Scripts" recurse="2"/>
+	<add level="1" folder="Game/Scripts/Entities" recurse="3"/>
+	<add level="1" folder="Game/Scripts/Entities/Items/XML" recurse="2"/>	
+	<add level="1" folder="Game/Entities" recurse="1"/>
+	<!-- level 3 -->
+	<add level="3" folder="Game/Libs" recurse="1"/>
+	<add level="3" folder="Game/Shaders" recurse="1"/>
+	<add level="3" folder="Game/Textures" recurse="1"/>
+	<add level="3" folder="Game/Objects" recurse="1"/>
+	<add level="3" folder="Game/Animations" recurse="1"/>
+	<add level="3" folder="Game/Fonts" recurse="1"/>
+	<add level="3" folder="Game/Materials" recurse="1"/>
+	<add level="3" folder="Game/Music" recurse="1"/>
+	<add level="3" folder="Game/Prefabs" recurse="1"/>
+	<add level="3" folder="Game/Sounds" recurse="1"/>
+	<add level="3" folder="Game/Levels/Multiplayer/IA" recurse="2"/>
+	<add level="3" folder="Game/Levels/Multiplayer/PS" recurse="2"/>
+	<!-- exclude mod files -->
+	<exclude level="1" file="Game/Scripts/Network/Protect.xml"/>
+	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingUtilities.lua"/>
+	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingMain.lua"/>
+	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingUpdater.lua"/>
+	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingGameRules.lua"/>
+	<exclude level="1" file="Game/Scripts/Entities/Others/SpawnPoint.lua"/>
+	<!--exclude others -->
+	<exclude level="1" file="Game/Config/config.dat"/>
+	<exclude level="1" file="Bin32/Crysis.exe"/>
+	<exclude level="1" file="Bin64/Crysis.exe"/>
+	<exclude level="1" wildcard="*/mission_mission0.xml"/>
+	<exclude level="1" wildcard="*/tags.txt"/>
+	<exclude level="1" wildcard="*.bak"/>
+	<exclude level="1" wildcard="*.bak2"/>
+	<exclude level="1" wildcard="*.tmd"/>
+	<exclude level="1" wildcard="*.cry"/>
+	<exclude level="1" wildcard="*.lyr"/>
+	<exclude level="1" wildcard="*.jpg"/>
+	<exclude level="1" wildcard="*.cgf"/>
+	<exclude level="1" wildcard="*.lgt"/>
+	<exclude level="1" wildcard="*.dds"/>
+	<exclude level="1" folder="Game/Shaders/Cache" recurse="1"/>
+</protect>
