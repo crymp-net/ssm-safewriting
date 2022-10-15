@@ -81,7 +81,6 @@
 	<exclude level="1" file="Files/SafeWritingMain.lua"/>
 	<exclude level="1" file="Files/SafeWritingUpdater.lua"/>
 	<exclude level="1" file="Files/SafeWritingGameRules.lua"/>
-	<exclude level="1" file="Game/Scripts/Entities/Others/SpawnPoint.lua"/>
 	<!--exclude others -->
 	<exclude level="1" file="Game/Config/config.dat"/>
 	<exclude level="1" file="Bin32/Crysis.exe"/>
