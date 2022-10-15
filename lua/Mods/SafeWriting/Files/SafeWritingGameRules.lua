@@ -1,6 +1,6 @@
 --Created on 12th of august 2013 as part of SSM SafeWriting project
 --CPPAPI.LoadSSMScript("Files/SafeWritingMain.lua");
-Script.LoadScript("Scripts/ModFiles/SafeWritingMain.lua",1,1);
+--Script.LoadScript("Scripts/ModFiles/SafeWritingMain.lua",1,1);
 function IntegrityUpdate()
 	if CryAction.IsServer() then
 		local IS = System.GetEntityByName("@IntegrityServiceEntity");
@@ -1383,7 +1383,7 @@ g_gameRules.OnPlayerRename=function(self,playerid,newname,isUserData)
 			name=name:gsub(" ","-"); --block spaces in name because of chat commands
 			name=name:gsub("%%","_");
 			if(SafeWriting.Settings.UseClearNames)then
-				name=ClearString(name,true);	--removes all !,´,y,¸,2,¨,1,^,°,c
+				name=ClearString(name,true);	--removes all !,ï¿½,y,ï¿½,2,ï¿½,1,^,ï¿½,c
 			end
 			if(SafeWriting.Settings.EnableCrews)then
 				if(player.CrewName)then

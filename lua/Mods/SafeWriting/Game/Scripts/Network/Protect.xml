@@ -77,10 +77,10 @@
 	<add level="3" folder="Game/Levels/Multiplayer/PS" recurse="2"/>
 	<!-- exclude mod files -->
 	<exclude level="1" file="Game/Scripts/Network/Protect.xml"/>
-	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingUtilities.lua"/>
-	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingMain.lua"/>
-	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingUpdater.lua"/>
-	<exclude level="1" file="Game/Scripts/ModFiles/SafeWritingGameRules.lua"/>
+	<exclude level="1" file="Files/SafeWritingUtilities.lua"/>
+	<exclude level="1" file="Files/SafeWritingMain.lua"/>
+	<exclude level="1" file="Files/SafeWritingUpdater.lua"/>
+	<exclude level="1" file="Files/SafeWritingGameRules.lua"/>
 	<exclude level="1" file="Game/Scripts/Entities/Others/SpawnPoint.lua"/>
 	<!--exclude others -->
 	<exclude level="1" file="Game/Config/config.dat"/>

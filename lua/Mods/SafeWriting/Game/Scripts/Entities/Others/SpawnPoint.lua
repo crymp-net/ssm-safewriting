@@ -34,8 +34,8 @@ function SpawnPoint.Server:OnInit()
 	--Log("Spawnpoint: init");
 	if not g_gameRules.OnChatMessage then
 		--System.LogAlways("$6[SSM SafeWriting] Replacing old game rules");
-		Script.UnloadScript("scripts/modfiles/safewritinggamerules.lua");
-		Script.LoadScript("scripts/modfiles/safewritinggamerules.lua");
+		--Script.UnloadScript("scripts/modfiles/safewritinggamerules.lua");
+		--Script.LoadScript("scripts/modfiles/safewritinggamerules.lua");
 		--PrepareAll();
 		--_G.SafeWritingGameRulesLoaded=true;
 	end

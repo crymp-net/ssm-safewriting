@@ -79,8 +79,8 @@ teamIDs = { all = 0, nk = 1, us = 2 };
 --~CF compat layer
 System.LogAlways("SafeWritingMain.lua loaded");
 
-Script.LoadScript("Scripts/ModFiles/SafeWritingUtilities.lua", 1, 1);
-Script.LoadScript("Scripts/ModFiles/SafeWritingUpdater.lua", 1, 1);
+--Script.LoadScript("Scripts/ModFiles/SafeWritingUtilities.lua", 1, 1);
+--Script.LoadScript("Scripts/ModFiles/SafeWritingUpdater.lua", 1, 1);
 
 --CPPAPI.LoadSSMScript("Files/SafeWritingUtilities.lua");
 --CPPAPI.LoadSSMScript("Files/SafeWritingUpdater.lua");
